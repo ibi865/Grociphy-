@@ -38,20 +38,23 @@ home_page cart admin_page edit_delete product_page completed_pending_orders
 
 ## 📸 Screenshots  
 
+## 📸 Screenshots  
+
 <p align="center">
-  <img src="Screenshots/homepage.png" alt="Homepage" height="400"/>
+  <img src="Screenshots/homepage.png" alt="Homepage" height="400"/> 
   <img src="Screenshots/cart.png" alt="Cart Page" height="400"/>
 </p>
 
 <p align="center">
-  <img src="Screenshots/admin_page.png" alt="Admin Page" height="400"/>
+  <img src="Screenshots/admin_page.png" alt="Admin Page" height="400"/> 
   <img src="Screenshots/completed_pending.png" alt="Completed & Pending Orders" height="400"/>
 </p>
 
 <p align="center">
-  <img src="Screenshots/product_page.png" alt="Product Page" height="400"/>
-  <img src="Screenshots/view_all_order.png" alt="View All Orders" height="400"/>
+  <img src="Screenshots/product_page.png" alt="Product Page" height="400"/> 
+  <img src="Screenshots/view_all_orders.png" alt="View All Orders" height="400"/>
 </p>
+
 
 
 
