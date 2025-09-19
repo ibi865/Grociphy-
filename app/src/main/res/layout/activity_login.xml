@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/signinplaceholder"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rb_61282" />
+
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingLeft="45dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/signinplaceholder"
+        app:layout_constraintStart_toStartOf="@+id/signinplaceholder"
+        app:layout_constraintTop_toBottomOf="@+id/signinplaceholder" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/welcome_animation"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:lottie_rawRes="@raw/login_animation2"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintTop_toTopOf="@id/logintxt"
+        app:layout_constraintBottom_toBottomOf="@id/logintxt"
+        app:layout_constraintStart_toEndOf="@id/logintxt"
+        android:layout_marginStart="-130dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Please sign in to continue"
+        android:paddingLeft="45dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logintxt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/logintxt"
+        app:layout_constraintTop_toBottomOf="@+id/logintxt" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginemailLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/green"
+        app:startIconDrawable="@drawable/account"
+        app:startIconTint="#4CAF50"
+        app:layout_constraintTop_toBottomOf="@id/textView5"
+        app:layout_constraintStart_toStartOf="@id/textView5"
+        app:layout_constraintEnd_toEndOf="@id/textView5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EMAIL"
+            android:paddingLeft="10dp"
+            android:paddingStart="48dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginpassLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/green"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/keylog"
+        app:startIconTint="#4CAF50"
+        app:hintEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/loginemailLayout"
+        app:layout_constraintStart_toStartOf="@id/loginemailLayout"
+        app:layout_constraintEnd_toEndOf="@id/loginemailLayout">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/loginpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:paddingTop="16dp"
+        android:paddingStart="48dp"
+        android:paddingBottom="16dp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+<com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_animation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/loading_animation"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/loginpassLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/green"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginpassLayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:paddingLeft="100dp"
+        android:text="Don't have an Account? "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/loginpassLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginpassLayout"
+        app:layout_constraintTop_toBottomOf="@+id/loginpassLayout" />
+
+    <TextView
+        android:id="@+id/l_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/socialIconsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imaggoogle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="24dp"
+            app:srcCompat="@drawable/google" />
+
+        <ImageView
+            android:id="@+id/imagphone"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/phone" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

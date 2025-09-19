@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1016352941306",
+    "project_id": "grociphy-29d95",
+    "storage_bucket": "grociphy-29d95.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016352941306:android:d83bca922e13dd2a375543",
+        "android_client_info": {
+          "package_name": "com.example.homescreen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUpvudM1EdRBCLvh52qMIsq5bCoCssJKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

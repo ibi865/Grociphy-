@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions for internet access and reading image files -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Homescreen"
+        tools:targetApi="31">
+        <activity
+            android:name=".Admin_Panel.View_All_Orders"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Panel.Admin_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Panel.AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Panel.View_Products"
+            android:exported="false"/>
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Product_Category"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Panel.Add_Product"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Panel.Admin_Panel"
+            android:exported="false"/>
+        <activity
+            android:name=".Customer_support"
+            android:exported="false" />
+        <activity
+            android:name=".Wishlist_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Cart_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".All_category"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

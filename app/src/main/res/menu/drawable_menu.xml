@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/homes1" />
+
+    <item
+        android:id="@+id/nav_categories"
+        android:title="Categories"
+        android:icon="@drawable/categories1" />
+
+    <item
+        android:id="@+id/nav_cart"
+        android:title="My Cart"
+        android:icon="@drawable/cart1" />
+
+    <item
+        android:id="@+id/nav_orders"
+        android:title="WishList"
+        android:icon="@drawable/heart2" />
+
+    <item
+        android:id="@+id/nav_support"
+        android:title="Customer Support"
+        android:icon="@drawable/support" />
+
+    <item
+        android:id="@+id/nav_about"
+        android:title="Restart"
+        android:icon="@drawable/home_icon" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/logout" />
+
+</menu>

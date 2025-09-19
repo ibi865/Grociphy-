@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Homescreen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="client_id">1016352941306-1skmj5thn4n0n6rirg7ckegvc3rndugo.apps.googleusercontent.com</string>
+    <string name="cloudinary_cloud_name">di3pnpjqw</string>
+    <string name="cloudinary_api_key">215142231516394</string>
+    <string name="cloudinary_api_secret" translatable="false">z2qRVueEPmX_keLY2NC85vpQLe8</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="#C8E6C9">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/vagetable"
+            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Product Info -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/img_product"
+            android:layout_marginStart="12dp"
+            android:layout_alignTop="@id/img_product"
+            android:gravity="start">
+
+
+        <!-- Product Name -->
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zinger Burger"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans_bold" />
+
+            <!-- Product Price -->
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 444.00"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/open_sans_bold" />
+
+            <!-- Quantity Controls -->
+            <LinearLayout
+                android:id="@+id/qty_container"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_decrease"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Decrease"
+                    android:padding="4dp"
+                    android:src="@drawable/remove_icon_3"
+                    app:tint="@color/black"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/tv_quantity"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="4dp"
+                    android:fontFamily="@font/open_sans_bold"/>
+
+                <ImageButton
+                    android:id="@+id/btn_increase"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Increase"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/black"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Delete icon on top right -->
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="4dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Delete"
+            android:padding="4dp"
+            android:src="@drawable/delete_icon_2"
+            app:tint="@color/black" />
+
+        <!-- Total Price below delete icon -->
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/btn_delete"
+            android:layout_marginTop="4dp"
+            android:text="Rs. 998.00"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:fontFamily="@font/open_sans_bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
